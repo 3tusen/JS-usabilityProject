@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Färdtjänst</title>
+
+    <!--Import favicon-->
+    <link rel="icon" href="assets/pictures/logo/favicon.ico">
+
+    <!--Import CSS-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+    <!--Import social media icons-->
+    <script src="https://kit.fontawesome.com/a542732003.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-upper-wrap">
+            <div class="header-logo-and-text-div">
+
+                <!--Logo-->
+                <a href="index.html"><img src="assets/pictures/logo/logo-vilhelmina.png" alt="Illustration utav en tältkåta ute i naturen" title="Startsida" id="logo"></a>
+
+                <!--Text next to logo-->
+                <a href="index.html">
+                    <div class="header-logo-text-div">
+                        
+                            <span id="logo-text">Vilhelmina Kommun</span>
+                        
+                            <span id="logo-site-description">Färdtjänst</span>
+                            
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="search-div">
+                <!--Hamburger-menu button-->
+                <button class="nav-toggle">
+                    <span class="hamburger">&#9776;</span>
+                    <span class="hamburger-x">&#215;</span>
+                </button>
+
+                <!--Search input -->
+                <input type="text" name="search" placeholder="Sök">
+                
+                <!--Search icon-->
+                <img src="assets/pictures/icons/icon-search.svg" alt="Sökfunktion, ett förstorningsglas" title="Sök på den här sidan" id="search-icon">
+
+            </div>
+            
+        </div>
+
+        <!--Navigation-->
+        <nav>
+            <ul id="nav-ul">
+                <li class="nav-li"><a href="login-booking.html" class="nav-a">Boka färdtjänst</a></li>
+                <li class="nav-li"><a href="info.html" class="nav-a">Information</a></li>
+                <li class="nav-li"><a href="apply.html" class="nav-a">Ansök om färdtjänst</a></li>
+                <li class="nav-li"><a href="contact.html" class="nav-a">Kontakt</a></li>
+                <li class="nav-li"><a href="login-my-pages.html" class="nav-a">Mina sidor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Breadcrumbs-->
+    <div class="breadcrumbs-div">
+        <a href="index.html"><span class="breadcrumb">Startsida</span></a>
+            <span class="breadcrumb divider">&#62;</span>
+                <a href=""><span class="breadcrumb" id="breadcrumb-toggle"></span></a>
+    </div>
+
+    <!--Main content-->
+    <main>
+        <section class="content">
+
+            <h1 class="content-heading">Boka färdtjänst</h1>
+
+            <!--Form starts-->
+            <form>
+
+                <!--Grid layout for input boxes-->
+                <div class="content-wrap-grid">
+
+                    <!--Input box-->
+                    <section class="input-box">
+                        
+                            <h2 class="h2-left">Resa</h2>
+
+                                <div class="input-div">
+                                    <label for="from" class="login-box-heading">Från</label>
+                                    <input id="from" type="text" placeholder="" class="login-box-input">
+                                </div>
+
+                                <div class="input-div">
+                                    <label for ="to" class="login-box-heading">Till</label>
+                                    <input id="to" type="text" placeholder="" class="login-box-input">
+                                </div>
+
+                                <div class="input-div">
+                                    <label for="date" class="login-box-heading">Datum</label>
+                                    <input id="date" type="text" placeholder="" class="login-box-input">
+                                </div>
+
+                                <div class="input-div-time">
+                                    <label for="time" class="login-box-heading">Tid för ankomst</label>
+
+                                        <div class="input-div-time-input-div">
+                                            <input id="time" type="text" placeholder="HH" class="login-box-input-time">
+                                            <input type="text" placeholder="MM" class="login-box-input-time">
+                                        </div>
+                                </div>
+
+                    </section>
+                    <!--End of input box-->
+
+                    <!--Input box-->
+                    <section class="input-box checkbox-section">
+                        
+                            <h2 class="h2-left">Extra information</h2>
+
+                                <div class="input-div checkbox-div">
+                                    <label for="wheelchair" class="login-box-heading">Rullstol</label>
+
+                                        <div class="checkbox"> 
+                                            <input id="wheelchair" class="checkbox-btn" type="checkbox">
+                                        </div> 
+
+                                </div>
+
+                                <div class="input-div checkbox-div">
+                                    <label for="wheelchair-foldable" class="login-box-heading">Hopfällbar rullstol</label>
+                                    
+                                        <div class="checkbox"> 
+                                            <input for="wheelchair-foldable" class="checkbox-btn" type="checkbox">
+                                        </div> 
+
+                                </div>
+
+                                <div class="input-div checkbox-div">
+                                    <label for="stairs" class="login-box-heading">Trappor</label>
+                                    
+                                        <div class="checkbox"> 
+                                            <input id="stairs" class="checkbox-btn" type="checkbox">
+                                        </div> 
+
+                                </div>
+
+                                <div class="input-div textarea-div">
+                                    <label for="message" class="login-box-heading">Meddelande</label>
+                                    <textarea id="message" placeholder="Skriv ditt meddelande här"></textarea>
+                                </div>
+                                
+                    </section>
+                    <!--End of input box-->
+
+                    <!--Input box-->
+                    <section class="input-box align-top-section">
+
+                        <!--Checkbox that toggles div beneath it-->
+                        <div class="input-div checkbox-div" id="align-top">
+                            <label id="attendant-label" for="checkbox-toggle" class="h2-left no-padding-h2">Ledsagare</label>
+
+                            <div class="checkbox"> 
+                                <input id="checkbox-toggle" class="checkbox-btn" type="checkbox">
+                            </div> 
+                        </div>
+                        <!--End of checkbox-->
+
+                                    <!--Div that gets toggled if checkbox above is changed-->
+                                    <div id="input-div-toggle" class="input-div-toggle">
+
+                                        <div class="input-div">
+                                            <label for="attendant-ssn" class="login-box-heading">Personnummer</label>
+                                            <input id="attendant-ssn" type="text" placeholder="" class="login-box-input">
+                                        </div>
+            
+                                        <div class="input-div">
+                                            <label for="attendant-firstname" class="login-box-heading">Förnamn</label>
+                                            <input id="attendant-firstname" type="text" placeholder="" class="login-box-input">
+                                        </div>
+            
+                                        <div class="input-div">
+                                            <label for="attendant-surname" class="login-box-heading">Efternamn</label>
+                                            <input id="attendant-surname" type="text" placeholder="" class="login-box-input">
+                                        </div>
+
+                                        <div class="input-div">
+                                            <label for="attendant-telephone-no" class="login-box-heading">Telefonnummer</label>
+                                            <input id="attendant-telephone-no" type="text" placeholder="" class="login-box-input">
+                                        </div>
+
+                                    </div>
+                                    <!--End of toggled div-->
+                            
+                    </section>
+                    <!--End of input box--> 
+                    
+                    <!--Input box-->
+                    <section class="input-box larger-section">
+
+                        <!--Checkbox that toggles div beneath it-->
+                        <div class="input-div checkbox-div">
+                            <label for="recurring-checkbox-toggle" class="h2-left smaller-h2" id="no-padding-h2">Återkommande resa?</label>
+
+                            <div class="checkbox"> 
+                                <input id="recurring-checkbox-toggle" class="checkbox-btn" type="checkbox" aria-expanded="false">
+                            </div> 
+                        </div>
+                        <!--End of Checkbox-->
+                                
+                                <!--Div that gets toggled if checkbox above is changed-->
+                               <div id="recurring-input-div-toggle" class="input-div-toggle">
+
+                                    <div class="input-div select-div">
+                                        
+                                            <label for="often-select" class="select-label">Hur ofta?</label>
+
+                                            <select name="often-select" class="select" id="often-select">
+                                                <option value="Vänligen välj" selected>--Vänligen välj--</option>
+                                                <option value="varje">Varje</option>
+                                                <option value="varannan">Varannan</option>
+                                                <option value="tredje">Var tredje</option>
+                                                <option value="fjärde">Var fjärde</option>
+                                                <option value="femte">Var femte</option>
+                                                <option value="sjätte">Var sjätte</option>
+                                                <option value="sjunde">Var sjunde</option>
+                                                <option value="åttonde">Var åttonde</option>
+                                                <option value="nionde">Var nionde</option>
+                                                <option value="tionde">Var tionde</option>
+                                                <option value="elfte">Var elfte</option>
+                                                <option value="tolfte">Var tolfte</option>
+                                            </select>
+                                        
+                                    </div>
+
+                                    <div class="input-div select-div">
+                                        
+                                        <label for="week-select" class="select-label">D / V / M</label>
+
+                                        <select name="week-select" class="select" id="week-select">
+                                            <option value="Vänligen välj" selected>--Vänligen välj--</option>
+                                            <option value="varje">Dag</option>
+                                            <option value="varannan">Vecka</option>
+                                            <option value="tredje">Månad</option>
+                                        </select>
+                                    
+                                     </div>
+
+                                </div>
+                                <!--End of toggled div-->
+                        
+                    </section>
+                    <!--End of input box--> 
+
+                </div>
+                <!--End of grid layout-->
+                
+                <!--Submit button, outside of grid-->
+                <div class="input-div div-center">
+                    <button id="book-btn" type="submit" class="btn-green btn-medium-size" aria-expanded="false">Boka resa</button>
+
+                        <!--Popup if a trip is booked-->
+                        <div id="booking-popup" aria-expanded="false">
+                            <p>Din resa är nu bokad! Under "Mina sidor" kan du se över 
+                                och göra ändringar.</p>
+                                <button type="button" id="popup-close-btn"><i class="far fa-times-circle"></i></button>
+                        </div>
+                        <!--End of popup-->
+                </div>
+                 <!--End of submit button-->
+
+            </form>
+            <!--End of form-->     
+
+            
+
+
+           
+
+            <div class="content-wrap-no-border">
+                <!--Telephone numbers-->
+                <aside class="phone-box">
+                    <h3 class="phone-box-heading">Telefonnummer</h3>
+
+                    <div class="phone-box-contact-item">
+                        <h3 class="phone-box-contact-item-heading">Kommunens Kundservice</h3>
+                        <a href="tel:094014466" class="btn-read-more">0940 - 144 66</a>
+                    </div>
+
+                    <div class="phone-box-contact-item">
+                        <h3 class="phone-box-contact-item-heading">Vilhelmina Taxi</h3>
+                        <a href="tel:094015566" class="btn-read-more">0940 - 155 66</a>
+                    </div>
+                </aside>
+
+            </div>
+   
+        </section>
+    </main>
+
+    <!--Footer, three columns-->
+    <footer>
+        <div class="footer-content-wrap">
+            <div class="footer-column">
+
+                <div class="footer-heading-div">
+                <h4 class="footer-heading">Kontakt</h4>
+                </div>
+
+                <div class="footer-column-sub-item">
+                    <p>Vilhelmina Kommun</p>
+                    <p>Torget 6</p>
+                    <p>912 81 Vilhelmina</p>
+                </div>
+
+                <div class="footer-column-sub-item">
+                    <p>Växel: <a class="link-inline" href="tel:094014000">0940 - 140 00</a></p>
+                    <p>Fax: <a class="link-inline" href="tel:094012956">0940 - 12956</a></p>
+                    <p>E-post: <a class="link-inline" href="mailto:info@vilhelmina.se">info@vilhelmina.se</a></p>
+                </div>
+
+                <div class="footer-column-sub-item">
+                    <p>Organisationsnummer: 212000 - 2601</p>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-heading-div">
+                <h4 class="footer-heading">Öppettider</h4>
+                </div>
+                
+                <div class="footer-column-sub-item">
+                    <p>Måndag - Fredag 08.00 - 16.00</p>
+                    <p>Lunchstängt 12.00 - 13.00</p>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-heading-div">
+                    <h4 class="footer-heading">Sociala medier</h4>
+                </div>
+                
+                <!--Social media icons-->
+                <div class="footer-column-sub-item">
+                    <a href="#" class="footer-social-media-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-social-media-icon"><i class="fab fa-instagram"></i></a> 
+                </div>
+
+                <div class="footer-heading-div-extra">
+                    <h4 class="footer-heading">Tillgänglighet</h4>
+                </div>
+                
+                <!--Social media icons-->
+                <div class="footer-column-sub-item">
+                    <p><a class="link-inline r" href="#">Rapport</a></p> 
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--Import JavaScript-->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
