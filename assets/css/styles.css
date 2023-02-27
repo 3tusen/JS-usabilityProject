@@ -49,7 +49,7 @@
     --h3-size: 1.3125em;   
     --logo-text-size: 4em;
     --logo-text-description-size: 2em;
-    --nav-li-size: 1.3125em;
+    --nav-li-size: 1.1125em;
     --p-size: 1.125em;
     --one-em-size: 1em;
     --footer-p-size: 1.125em;
@@ -241,8 +241,9 @@ nav .active {
     align-content: center;
     display: flex;
     text-align: center;
-    padding: 1em;
+    padding: 0em;
     transition: all 0.3s ease-in;
+    width: 100%;
 }
 
 .nav-a:hover {

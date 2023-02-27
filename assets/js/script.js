@@ -126,7 +126,7 @@ navToggle.addEventListener('keyup', (e) => {
 //Remove nav-open class on load
 window.addEventListener('load', () => {
     document.body.classList.remove('nav-open');
-    navUl.style.display = "none";
+    navUl.style.display = "flex";
 });
 
 //Run breadcrumbs funktion on load
